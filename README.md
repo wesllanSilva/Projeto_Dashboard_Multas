@@ -16,3 +16,4 @@ Configurar ambiente virtual dentro da pasta do projeto:
 - executar o 'activate' no diretorio recém criado pela maquina virtual "ambientevirtual\Scripts"
 - Instalar o framework "dash" -> pip install dash (Neste projeto criei uma pasta 'Dashboard')
 - Como o ambiente virtual é novo precisa instalar o 'plotly' e o 'pandas' (pip install pandas)
+- Instalar o 'dash_bootstrap_components' (pip install dash_bootstrap_components)
