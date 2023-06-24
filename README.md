@@ -8,3 +8,11 @@
 <img src= "![novoDash](https://github.com/wesllanSilva/Projeto_Dashboard_Multas/assets/62728922/8c3c0daa-6779-4d39-88c2-d2b7f7428ea5)" width="700px" />
  
 </div>
+
+
+Configurar ambiente virtual dentro da pasta do projeto:
+- pip install virtualenv
+- python -m venv ambientevirtual
+- executar o 'activate' no diretorio recém criado pela maquina virtual "ambientevirtual\Scripts"
+- Instalar o framework "dash" -> pip install dash (Neste projeto criei uma pasta 'Dashboard')
+- Como o ambiente virtual é novo precisa instalar o 'plotly' e o 'pandas' (pip install pandas)
