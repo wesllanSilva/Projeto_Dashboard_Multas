@@ -33,7 +33,7 @@ app.layout = html.Div(
     
     #Toda aplicação
     children=[
-
+        
         #Banner em cima
         html.Div(
             className='banner',
@@ -82,7 +82,7 @@ app.layout = html.Div(
             },
 
            children=[
-
+                
                 html.Div(
                     className='left-div',
                     style={
@@ -131,10 +131,58 @@ app.layout = html.Div(
                                         'display': 'flex',
                                         'flex-direction': 'row',
                                         'justify-content': 'center',
-                                    }
+                                    },
                                 )
                             ],
                         ),
+
+                        html.Div(
+                            className='inner-div',
+                            children=[
+                                html.H5(
+                                    ['Total valores'], 
+                                    style={
+                                    'line-height': '1.6',
+                                    'box-sizing': 'border-box',
+                                    'margin': '1rem',
+                                    'font-weight': '500',
+                                    'align-self': 'flex-start',                                                
+                                    }
+                                ),
+                            
+                        
+
+                                html.H4(
+                                    [f'R$ { int( round( Base_Valor.Quantidade.sum() /1000000, 0 ) )  } mi'],
+                                    style={
+                                        'font-size': '1.5em',
+                                        'line-height': '1.6',
+                                        'font-weight': '400',
+                                        'color': '#3a8c5d',
+                                        'border-radius': '3px',
+                                        'padding': '12px 8px 12px 14px',
+                                        'border': '1px solid #D3D3D3',
+                                        'background': '#1e2130',
+                                        'box-sizing': 'border-box',
+                                        'width': '100%',
+                                        'display': 'flex',
+                                        'flex-direction': 'row',
+                                        'justify-content': 'center',
+                                    }
+                                )
+                            ]     
+                        )
+
+
+
+
+
+
+
+
+
+
+
                     ],
                 ),
            ],
